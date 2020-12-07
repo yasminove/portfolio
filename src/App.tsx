@@ -3,7 +3,8 @@ import './App.css';
 
 import ProfilePic from './images/yasmin.jpeg';
 import Resume from './images/resume.pdf';
-import Follow from './images/follow.png'
+import Follow from './images/follow.png';
+import Dash from './images/dash.jpg'
 
 function App() {
   return (
@@ -122,7 +123,23 @@ function App() {
       </section>
 
       <section className='s1'>
-        <div className='main-container'>PORTFOLIO</div>
+        <div className='main-container'>
+          <h3 style={{textAlign: 'center'}}>Some of my past projects</h3>
+          <div className="post-wrapper">
+            <div className="post">
+              <img src={Dash}/>
+
+            </div>
+
+            <div className="post">
+
+            </div>
+
+            <div className="post">
+
+            </div>
+          </div>
+        </div>
       </section>
 
       <section className='s2'>
