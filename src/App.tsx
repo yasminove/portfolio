@@ -3,6 +3,7 @@ import './App.css';
 
 import ProfilePic from './images/yasmin.jpeg';
 import Resume from './images/resume.pdf';
+import Follow from './images/follow.png'
 
 function App() {
   return (
@@ -106,7 +107,16 @@ function App() {
                 </ul>
               </div>
             </div>
-            <div className='social-links'></div>
+            <div className='social-links'>
+              <img id="social-img" src={Follow}/>
+              <h3>Connect with me on LinkedIn and GitHub</h3>
+              <p>
+              <a href="https://github.com/yasminhillis" target="__blank">LinkedIn: Yasmin Hillis</a>
+              </p>
+              <p> 
+              <a href="https://www.linkedin.com/in/yasmin-hillis-66088515a/" target="__blank">GitHub: Yasmin Hillis</a>
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -117,6 +127,7 @@ function App() {
 
       <section className='s2'>
         <div className='main-container'>CONTACT</div>
+        
       </section>
     </div>
   );
