@@ -217,6 +217,24 @@ li {
 
 }
 
+.about-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  padding-top: 50px; 
+  padding-bottom: 50px;
+  gap: 100px;
+}
+
+.social-links {
+  display: grid;
+  align-content: center;
+  text-align: center;
+}
+
+#social-img {
+  width: 100%;
+}
+
 #preview {
   width: 300px;
   border: 1.5px solid #17a2b8;
@@ -252,6 +270,12 @@ li {
 #corner-br {
   bottom: -5px; 
   right: -5px;
+}
+
+#skills {
+  display: flex; 
+  justify-content: space-evenly;
+  background-color: var(--previewShadow);
 }
 
 
