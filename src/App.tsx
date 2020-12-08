@@ -26,30 +26,6 @@ import Dash from './images/dash.jpg';
 
 
 function App() {
-  function LoadCSS( cssURL: any ) {
-
-    // 'cssURL' is the stylesheet's URL, i.e. /css/styles.css
-
-    return new Promise( function( resolve, reject ) {
-
-        var link = document.createElement( 'link' );
-
-        link.rel  = 'stylesheet';
-
-        link.href = cssURL;
-
-        document.head.appendChild( link );
-
-        link.onload = function() { 
-
-            // resolve(); 
-
-            console.log( link, 'CSS has loaded!' ); 
-            
-        };
-    } );
-}
-
   return (
     <div className='App'>
       <section className='s1'>
@@ -77,9 +53,7 @@ function App() {
                 Personalize Theme
               </h5>
               <div id='theme-options-wrapper'>
-                <div id='light-mode' className='theme-dot'
-                onClick={() => LoadCSS('blue.css')}
-                ></div>
+                <div id='light-mode' className='theme-dot'></div>
                 <div id='blue-mode' className='theme-dot'></div>
                 <div id='green-mode' className='theme-dot'></div>
                 <div id='purple-mode' className='theme-dot'></div>
@@ -177,9 +151,9 @@ function App() {
                 <h6 className="post-title">Post Title</h6>
                 <p className="post-intro">Designed built & mantained a the lab managment system for FOI Laboratories</p>
 
-                <Router>
+                {/* <Router>
                 <Link push strict exact to="/post" component={Post}>Read More</Link>
-                </Router>
+                </Router> */}
               </div>
             </div>
 
