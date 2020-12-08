@@ -1,10 +1,29 @@
 import React from 'react';
+// 
+// import './blue.css';
 import './App.css';
+
+
+// import './green.css';
+
+import { Post } from './Post'
+import { Link, BrowserRouter as Router, Switch, Route, Redirect} from 'react-router-dom'
 
 import ProfilePic from './images/yasmin.jpeg';
 import Resume from './images/resume.pdf';
 import Follow from './images/follow.png';
-import Dash from './images/dash.jpg'
+import Dash from './images/dash.jpg';
+
+
+   
+      <Router>
+         <Switch>
+      <Route exact path="/" component={App} />
+      <Route exact path="/post" component={Post} />
+      </Switch>
+      </Router>
+
+
 
 function App() {
   return (
@@ -127,23 +146,57 @@ function App() {
           <h3 style={{textAlign: 'center'}}>Some of my past projects</h3>
           <div className="post-wrapper">
             <div className="post">
-              <img src={Dash}/>
+              <img className="thumbnail" src={Dash}/>
+              <div className="post-preview">
+                <h6 className="post-title">Post Title</h6>
+                <p className="post-intro">Designed built & mantained a the lab managment system for FOI Laboratories</p>
 
+                {/* <Router>
+                <Link push strict exact to="/post" component={Post}>Read More</Link>
+                </Router> */}
+              </div>
             </div>
 
             <div className="post">
-
+              <img className="thumbnail" src={Dash}/>
+              <div className="post-preview">
+                <h6 className="post-title">Post Title</h6>
+                <p className="post-intro">Designed built & mantained a the lab </p>
+              </div>
             </div>
 
             <div className="post">
-
+              <img className="thumbnail" src={Dash}/>
+              <div className="post-preview">
+                <h6 className="post-title">Post Title</h6>
+                <p className="post-intro">Design</p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       <section className='s2'>
-        <div className='main-container'>CONTACT</div>
+        <div className='main-container'>
+          <h3 style={{textAlign: 'center'}}>Get In Touch</h3>
+          <form id="contact-form">
+
+            <label>Name</label>
+            <input id="input-field" type="text" name="name"/>
+
+            <label>Subject</label>
+            <input id="input-field" type="text" name="subject"/>
+
+            <label>Email</label>
+            <input id="input-field" type="text" name="email"/>
+
+            <label>Message</label>
+            <textarea id="input-field" name="messgae"></textarea>
+
+            <input id="submit-btn" type="submit" value="send" />
+
+          </form>
+        </div>
         
       </section>
     </div>
