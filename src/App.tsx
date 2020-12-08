@@ -16,12 +16,12 @@ import Dash from './images/dash.jpg';
 
 
    
-      <Router>
-         <Switch>
-      <Route exact path="/" component={App} />
-      <Route exact path="/post" component={Post} />
-      </Switch>
-      </Router>
+      // <Router>
+      //    <Switch>
+      // <Route exact path="/" component={App} />
+      // <Route exact path="/post" component={Post} />
+      // </Switch>
+      // </Router>
 
 
 
